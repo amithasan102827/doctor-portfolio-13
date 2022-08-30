@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+    --menu-background: #dadada;
+    --appointment-background: #fff;
+    --banner-backgroundr: #FAFAFA;
+    --bio-backgroundr: #d4edfc;
+    --edu-background: #FFFFFF;
+    --experience-backgroundr: #2c4965;
+    --achievement-backgroundr: #d4edfc;
+    --chamber-details-backgroundr: #ffffff;
+
+    --heading-font-family: "Montserrat", sans-serif;
+    --paragraph-font-family: "Poppins", sans-serif;
+    --body-font-size: 14px;
+
+    /* top-navbar-section */
+    --top-nav-font-family: "Poppins Regular", sans-serif;
+    --top-nav-font-color: #575756;
+    --top-nav-font-size: 13px;
+    --top-nav-background-color: #ededed;
+
+
+
+
+    /* appointment-section */
+    --brand-font-size: 26px;
+    --brand-text-color: #2c4965;
+    --brand-icon-color: #2c4965;
+    --mobile-icon-color: #616160;
+    --brand-font-family: "poppins-semibold", sans-serif;
+    --brand-Logo-width: 48px;
+    --mobile-icon-width: 32px;
+    --mobile-text-font-size: 14px;
+    --mobile-text-font-family: "poppins-bold", sans-serif;
+    --mobile-number-font-size: 22px;
+    /* banner-section */
+    --prof-title-font-family: "Poppins Regular", sans-serif;
+    --prof-title-color: #1d3055;
+    --doctor-name-font-family: "Montserrat Bold", sans-serif;
+    --doctor-name-color: #1d3055;
+    --doctor-description-font-family: "Poppins Regular", sans-serif;
+    --doctor-description-font-color: #646363;
+    --social-icon-color: #766EB1;
+
+    /* biography-section */
+    --biography-description-font-family: 'Poppins  Regular', sans-serif;
+    --biography-description-font-color: #646363;
+
+    /* education-section */
+    --education-description-font-family: 'Poppins  Regular', sans-serif;
+    --education-description-font-color: #646363;
+
+    /* experience-section */
+    --exp-description-font-color: #ffffff;
+    --exp-description-font-family: 'Poppins SemiBold', sans-serif;
+    --exp-title-color: #2c4965;
+    --exp-title-background-color: #ffffff;
+
+    /* achievement section */
+    --achieve-title-font-familiy: 'Montserrat Semibold', sans-serif;
+    --achieve-title-font-color: #95C11F;
+    --achieve-description-font-color: #646363;
+    --achieve-description-font-familly: 'Poppins  Regular', sans-serif;
+
+    /* chamber-section */
+
+    --chamber-hospital-name-font-color: #646363;
+    --chamber-hospital-name-font-family: 'Poppins Medium', sans-serif;
+    --chamber-hospital-add-font-family: 'Montserrat Bold', sans-serif;
+    --chamber-hospital-add-font-color: #727070;
+    --chamber-time-font-family: 'Montserrat SemiBold', sans-serif;
+    --chamber-time-font-color: #727070;
+
+
+    /* title */
+    --title-font-color: #ffffff;
+    --title-background-color: #1d3055;
+    --title-font-family: "Poppins SemiBold ", sans-serif;
+
+    /* solid-box-background-color */
+    --solid-box-background-color: #2c4965;
+}
+
+
+
+/* Global setup */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: var(--paragraph-font-family);
+    font-size: var(--body-font-size);
+}
+
+
+
+
+/*TOP NAVBAR-SECTION*/
+.navbar-item {
+    font-size: var(--top-nav-font-size);
+    font-family: var(--top-nav-font-family);
+
+}
+
+.top-nav {
+    background-color: var(--top-nav-background-color);
+}
+
+/* APPOINTMET-SECTION */
+
+.appointment-navbar {
+    margin-top: 57px;
+    background-color: var(--appointment-background);
+}
+
+
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_background {
+    background-color: var(--brand-icon-color);
+}
+
+.Appointment-Logo {
+    width: var(--brand-Logo-width);
+}
+
+.navbar-brand h1 {
+    color: var(--brand-text-color);
+    font-size: var(--brand-font-size);
+    font-family: var(--brand-font-family);
+}
+
+.appointment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-icon {
+    width: var(--mobile-icon-width);
+    margin-bottom: 10px;
+    margin-left: 10px;
+    color: var(--mobile-icon-color);
+}
+
+.mobile-text-container {
+    line-height: 30px;
+
+}
+
+.mobile-text {
+    font-size: var(--mobile-text-font-size);
+    font-family: var(--mobile-text-font-family);
+    font-weight: 600;
+}
+
+.mobile-num {
+    font-size: var(--mobile-number-font-size);
+    font-family: var(--mobile-text-font-family);
+    font-weight: 700;
+}
+
+
+
+
+.title-style {
+    background-color: var(--title-background-color);
+    padding: 1px 26px;
+    color: var(--title-font-color);
+}
+
+/* HEADER-BANNER-SETION */
+
+.header-banner-container {
+    background-image: url(./images/tem-1-banner-back.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-img-container img {
+    height: 460px;
+}
+
+.banner-text-container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.doctor-name {
+    font-family: var(--doctor-name-font-family);
+    color: var(--doctor-name-color);
+}
+
+.prof-title {
+    text-align: justify;
+    font-family: var(--prof-title-font-family);
+    color: var(--prof-title-color);
+}
+
+.doctor-description {
+    text-align: justify;
+    font-family: var(--doctor-description-font-family);
+    color: var(--doctor-description-font-color);
+}
+
+.banner-icon a {
+    text-decoration: none;
+}
+
+.fa-facebook-f {
+    color: #3b5998;
+}
+
+.fa-instagram {
+    color: rgb(209, 41, 41);
+
+}
+
+.fa-whatsapp {
+    color: #25D366;
+}
+
+.fa-linkedin {
+    color: #0e76a8;
+}
+
+/* GREEN-BACKGROUND */
+.color-horizontal-line {
+    height: 8px;
+    background-color: var(--solid-box-background-color);
+}
+
+/* BIOGRAPHI-SECTION */
+
+.biography-container {
+    background-color: var(--bio-backgroundr);
+}
+
+.biography-text-container {
+    width: 50%;
+    margin: auto;
+}
+
+
+.biography-description {
+    font-family: var(--biography-description-font-family);
+    color: var(--biography-description-font-color);
+    text-align: justify;
+}
+
+
+/* EDUCATON-SECTION */
+
+.education-container {
+    background-color: var(--edu-background);
+}
+
+.education-img-container img {
+    height: 460px;
+}
+
+.education-description {
+    text-align: justify;
+    font-family: var(--education-description-font-family);
+    color: var(--education-description-font-color);
+}
+
+
+
+/* EXPERIENCE-SECTION */
+
+.experience-container {
+    background-color: var(--experience-backgroundr);
+}
+
+.exp-img-container img {
+    height: 360px;
+}
+
+.exp-title {
+    font-family: var(--exp-title-font-family);
+    color: var(--exp-title-font-color);
+    background-color: var(--exp-title-background-color);
+    padding: 1px 26px;
+    color: var(--exp-title-color);
+}
+
+.exp-text-box h6 {
+    font-family: var(--exp-description-font-family);
+    color: var(--exp-description-font-color);
+}
+
+.exp-text-box small {
+    font-family: var(--exp-description-font-family);
+    color: var(--exp-description-font-color);
+}
+
+
+/* ACHIEVEMENT-SECTION */
+
+.achievement-container {
+    background-color: var(--achievement-backgroundr);
+}
+
+.achievement-img-container {
+    background-image: url("./images/achie-img.png");
+    height: 460px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 260px 360px;
+
+}
+
+
+.achievement-description {
+    font-family: var(--achieve-description-font-familly);
+    color: var(--achieve-description-font-color);
+    text-align: justify;
+}
+
+
+/* CHAMBER-DETAILS */
+
+.chamber-details-horizontal-line {
+    height: 0.01rem;
+    width: 75%;
+    background-color: #646363;
+}
+
+.hospital-address {
+    font-size: var(--chamber-hospital-add-font-size);
+    font-family: var(--chamber-hospital-add-font-family);
+    color: var(--chamber-hospital-add-font-color);
+}
+
+.hospital-name {
+    font-family: var(--chamber-hospital-name-font-family);
+    color: var(--chamber-hospital-name-font-color);
+}
+
+.time {
+    font-family: var(--chamber-time-font-family);
+    color: var(--chamber-time-font-color);
+}
+
+@media only screen and (max-width: 768px) {
+
+
+    /* APPOINTMET-SECTION  MEDIA QUERY*/
+    .appointment-navbar {
+        margin-top: 57px;
+    }
+
+    .navbar-brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Appointment-Logo {
+        width: 40px;
+    }
+
+    .navbar-brand h1 {
+        font-size: 16px;
+        font-family: var(--brand-font-family);
+        color: var(--brand-text-color);
+    }
+
+    .appointment-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-icon {
+        width: 20px;
+        margin: auto 0;
+        color: var(--mobile-icon-color);
+    }
+
+    .mobile-text-container {
+        line-height: 16px;
+    }
+
+    .mobile-text {
+        font-size: 9px;
+        font-family: var(--mobile-text-font-family);
+    }
+
+    .mobile-num {
+        font-size: 14px;
+        font-family: var(--mobile-text-font-family);
+    }
+
+
+    /* HEADER-BANNER-SECTION */
+    .banner-img-container img {
+        height: 360px;
+    }
+
+    .banner-text-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* BIOGRAPHY-SECTON */
+    .biography-text-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    /* BIOGRAPHI-SECTION */
+    .education-img-container img {
+        height: 360px;
+    }
+
+    /* EXPERIENCE-SECTION */
+    .exp-img-container img {
+        height: 240px;
+    }
+
+}
+
+/* TAP RESPONSIVE */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .exp-img-container img {
+        height: 280px;
+    }
+
+}
